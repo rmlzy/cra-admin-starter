@@ -32,6 +32,7 @@
     "antd-dayjs-webpack-plugin": "^1.0.0",
     "classnames": "^2.2.6",
     "customize-cra": "^0.9.1",
+    "dayjs": "^1.8.25",
     "echarts": "^4.7.0",
     "echarts-for-react": "^2.0.15-beta.1",
     "less": "^3.11.1",

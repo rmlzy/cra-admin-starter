@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card, Carousel } from "antd";
+import { Row, Col, Card } from "antd";
 import ReactEcharts from "echarts-for-react";
 import "./style.less";
 
