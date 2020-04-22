@@ -1,6 +1,6 @@
 基于 CRA 的中后台系统模板。Angular 版本可以参考 [ng-admin-starter](https://github.com/fs-coder/ng-admin-starter)
 
-## 预览
+## [预览](https://fs-coder.github.io/cra-admin-starter)
 ![](./docs/preview1.jpg)
 
 ## 特性
@@ -14,12 +14,13 @@
     + [classnames](https://github.com/JedWatson/classnames)
     + [lodash](https://github.com/lodash/lodash)
     + [dayjs](https://github.com/iamkun/dayjs)
+    + [prettier](https://github.com/prettier/prettier)
 1. 借助 [echarts-for-react](https://github.com/hustcc/echarts-for-react) 集成了图标库ECharts;
 
 ## 如何使用
 ```shell script
-git clone git@github.com:fs-coder/we-admin-ui.git
-cd we-admin-ui
+git clone git@github.com:fs-coder/cra-admin-starter.git
+cd cra-admin-starter
 yarn install
 yarn run start
 ```
