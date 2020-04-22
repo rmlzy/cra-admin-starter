@@ -1,0 +1,2 @@
+(this["webpackJsonpcra-admin-starter"]=this["webpackJsonpcra-admin-starter"]||[]).push([[11],{72:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return o}));var r=e(8),a=e(9),c=e(11),i=e(10),u=e(0),s=e.n(u),o=function(n){Object(i.a)(e,n);var t=Object(c.a)(e);function e(){return Object(r.a)(this,e),t.apply(this,arguments)}return Object(a.a)(e,[{key:"render",value:function(){return s.a.createElement("div",null,"TrendingAnalysis")}}]),e}(s.a.Component)}}]);
+//# sourceMappingURL=11.35880e88.chunk.js.map
