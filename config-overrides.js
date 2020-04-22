@@ -14,7 +14,7 @@ module.exports = override(
       "@menu-dark-bg": "#2f353a",
       "@menu-dark-arrow-color": "#fff",
       "@menu-dark-submenu-bg": "rgba(0, 0, 0, 0.2)",
-      "@menu-collapsed-width": "80px",
+      "@menu-collapsed-width": "50px",
     },
   }),
   addWebpackPlugin(new AntdDayjsWebpackPlugin())

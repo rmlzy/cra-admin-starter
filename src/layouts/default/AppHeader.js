@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, Menu, Dropdown } from "antd";
+import { Badge, Menu, Dropdown, Avatar } from "antd";
 import { Link } from "react-router-dom";
 import { BellOutlined, UserOutlined } from "@ant-design/icons";
 import logoPng from "../../images/logo.png";
@@ -58,11 +58,12 @@ export default class AppHeader extends React.Component {
           </li>
         </ul>
 
-        <div className="user">
-          <Dropdown overlay={menu} placement="bottomRight">
-            <UserOutlined />
-          </Dropdown>
-        </div>
+        <Dropdown overlay={menu} placement="bottomRight">
+          <div className="user">
+            <Avatar icon={<UserOutlined />} />
+            <span style={{ marginLeft: 5 }}>管理员</span>
+          </div>
+        </Dropdown>
       </div>
     );
   }

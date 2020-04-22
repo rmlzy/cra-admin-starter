@@ -3,7 +3,7 @@ import { Menu } from "antd";
 import { Link, withRouter } from "react-router-dom";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 
-import routes from "../../routes";
+import { defaultRoutes } from "../../routes";
 
 const { SubMenu } = Menu;
 
@@ -48,7 +48,7 @@ class AppAside extends React.Component {
             onOpenChange={this.onOpenChange}
             onSelect={this.onSelect}
           >
-            {routes.map((level1, level1Index) => {
+            {defaultRoutes.map((level1, level1Index) => {
               if (!level1.children) {
                 return (
                   <Menu.Item key={level1.link}>
@@ -59,19 +59,35 @@ class AppAside extends React.Component {
                   </Menu.Item>
                 );
               }
-              const title = (
+
+              const level1Title = (
                 <span>
                   {level1.icon}
                   <span>{level1.title}</span>
                 </span>
               );
               return (
-                <SubMenu key={level1.link} title={title}>
-                  {level1.children.map((level2, level2Index) => (
-                    <Menu.Item key={level2.link}>
-                      <Link to={level2.link}>{level2.title}</Link>
-                    </Menu.Item>
-                  ))}
+                <SubMenu key={level1.link} title={level1Title}>
+                  {level1.children.map((level2, level2Index) => {
+                    if (!level2.children) {
+                      return (
+                        <Menu.Item key={level2.link}>
+                          <Link to={level2.link}>
+                            <span>{level2.title}</span>
+                          </Link>
+                        </Menu.Item>
+                      );
+                    }
+                    return (
+                      <SubMenu key={level2.link} title={level2.title}>
+                        {level2.children.map((level3, level3Index) => (
+                          <Menu.Item key={level3.link}>
+                            <Link to={level3.link}>{level3.title}</Link>
+                          </Menu.Item>
+                        ))}
+                      </SubMenu>
+                    );
+                  })}
                 </SubMenu>
               );
             })}

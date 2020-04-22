@@ -1,7 +1,7 @@
 import React from "react";
 import { Breadcrumb } from "antd";
 import { withRouter, Link } from "react-router-dom";
-import routes from "../../routes";
+import { defaultRoutes } from "../../routes";
 
 class AppBody extends React.Component {
   state = {
@@ -10,7 +10,7 @@ class AppBody extends React.Component {
 
   componentDidMount() {
     const { pathname } = this.props.location;
-    const expandedMenus = this.expandMenu(routes);
+    const expandedMenus = this.expandMenu(defaultRoutes);
     let currentBreads = [];
     expandedMenus.forEach((menu) => {
       if (menu.length) {

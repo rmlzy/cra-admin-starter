@@ -1,8 +1,9 @@
 import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 import Loadable from "react-loadable";
+import { DefaultLayout, BlankLayout } from "./layouts";
 import Loading from "./components/Loading";
-import routes from "./routes";
+import { defaultRoutes, blankRoutes } from "./routes";
 import "./global.less";
 
 const lazy = (Name) =>
@@ -19,14 +20,25 @@ function App() {
   return (
     <HashRouter>
       <Switch>
-        {routes.map((level1, level1Index) => {
+        {defaultRoutes.map((route, index) => {
           return (
             <RouteWithLayout
-              layout={level1.layout}
-              key={level1Index}
-              exact={level1.exact}
-              path={level1.link}
-              component={lazy(level1.component)}
+              layout={DefaultLayout}
+              key={index}
+              exact={route.exact}
+              path={route.link}
+              component={lazy(route.component)}
+            />
+          );
+        })}
+        {blankRoutes.map((route, index) => {
+          return (
+            <RouteWithLayout
+              layout={BlankLayout}
+              key={index}
+              exact={route.exact}
+              path={route.link}
+              component={lazy(route.component)}
             />
           );
         })}
