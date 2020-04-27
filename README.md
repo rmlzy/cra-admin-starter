@@ -9,7 +9,7 @@
 1. 借助 [react-app-rewired](https://github.com/timarney/react-app-rewired) 扩展 cra 的功能, 配置文件[config-overrides](./config-overrides.js);
 1. 集成了 [antd](https://github.com/ant-design/ant-design), 支持修改主题, 使用 dayjs 替代 moment 组件;
 1. 集成了 [react-router](https://github.com/ReactTraining/react-router);
-1. 集成了 [react-loadable](https://github.com/jamiebuilds/react-loadable), 用于实现组件懒加载;
+1. 支持组件懒加载、图片懒加载;
 1. 集成了 [react-lazy-load-image-component](https://github.com/Aljullu/react-lazy-load-image-component), 用于实现图片懒加载;
 1. 集成了百度地图、高德地图、腾讯地图;
 1. 集成了富文本编辑器 [quill](https://github.com/zenoamaro/react-quill);
@@ -19,7 +19,8 @@
     + [lodash](https://github.com/lodash/lodash)
     + [dayjs](https://github.com/iamkun/dayjs)
     + [prettier](https://github.com/prettier/prettier)
-1. 借助 [echarts-for-react](https://github.com/hustcc/echarts-for-react) 集成了图标库ECharts;
+1. 借助 [echarts-for-react](https://github.com/hustcc/echarts-for-react) 集成了图表库ECharts;
+1. 附带了很多示例页面;
 
 ## 如何使用
 ```shell script
