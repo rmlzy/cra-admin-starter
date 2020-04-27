@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Form/StepForm/index.js"],"names":["StepFormPage","React","Component"],"mappings":"iOAEqBA,E,uKAEjB,OAAO,6C,GAF+BC,IAAMC","file":"static/js/18.9355582d.chunk.js","sourcesContent":["import React from \"react\";\n\nexport default class StepFormPage extends React.Component {\n  render() {\n    return <div>StepForm</div>;\n  }\n}\n"],"sourceRoot":""}

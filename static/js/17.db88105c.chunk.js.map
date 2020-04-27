@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Form/BasicForm/index.js"],"names":["BasicFormPage","React","Component"],"mappings":"iOAEqBA,E,uKAEjB,OAAO,8C,GAFgCC,IAAMC","file":"static/js/17.db88105c.chunk.js","sourcesContent":["import React from \"react\";\n\nexport default class BasicFormPage extends React.Component {\n  render() {\n    return <div>BasicForm</div>;\n  }\n}\n"],"sourceRoot":""}
