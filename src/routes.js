@@ -1,5 +1,12 @@
 import React from "react";
-import { DashboardOutlined, EditOutlined, AreaChartOutlined, SkinOutlined, FormOutlined } from "@ant-design/icons";
+import {
+  DashboardOutlined,
+  EditOutlined,
+  AreaChartOutlined,
+  SkinOutlined,
+  FormOutlined,
+  GlobalOutlined,
+} from "@ant-design/icons";
 
 export const defaultRoutes = [
   {
@@ -70,6 +77,26 @@ export const defaultRoutes = [
       {
         title: "Quill富文本",
         link: "/editor/quill",
+      },
+    ],
+  },
+  {
+    title: "地图",
+    icon: <GlobalOutlined />,
+    link: "/map",
+    component: "Map",
+    children: [
+      {
+        title: "高德地图",
+        link: "/map/amap",
+      },
+      {
+        title: "百度地图",
+        link: "/map/bmap",
+      },
+      {
+        title: "腾讯地图",
+        link: "/map/qmap",
       },
     ],
   },
