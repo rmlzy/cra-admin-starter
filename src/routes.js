@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  DashboardOutlined,
-  EditOutlined,
-  HourglassOutlined,
-  PullRequestOutlined,
-  PictureOutlined,
-  ControlOutlined,
-  CrownOutlined,
-  GoldOutlined,
-  SkinOutlined,
-} from "@ant-design/icons";
+import { DashboardOutlined, EditOutlined, AreaChartOutlined, SkinOutlined } from "@ant-design/icons";
 
 export const defaultRoutes = [
   {
@@ -52,6 +42,22 @@ export const defaultRoutes = [
       {
         title: "复杂表单",
         link: "/form/advanced-form",
+      },
+    ],
+  },
+  {
+    title: "图表",
+    icon: <AreaChartOutlined />,
+    link: "/charts",
+    component: "Charts",
+    children: [
+      {
+        title: "折线图",
+        link: "/charts/line-chart",
+      },
+      {
+        title: "饼状图",
+        link: "/charts/bar-chart",
       },
     ],
   },
