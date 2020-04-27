@@ -22,8 +22,8 @@ export default class AppHeader extends React.Component {
     return (
       <div className="app-header">
         <Link className="brand" to="/">
-          <img src={logoPng} alt="舆情监控系统" />
-          <span>舆情监控系统</span>
+          <img src={logoPng} alt="CRA 管理系统" />
+          <span>CRA 管理系统</span>
         </Link>
 
         <ul className="nav">

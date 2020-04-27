@@ -1,13 +1,14 @@
 import React from "react";
 import {
   DashboardOutlined,
-  PercentageOutlined,
+  EditOutlined,
   HourglassOutlined,
   PullRequestOutlined,
   PictureOutlined,
   ControlOutlined,
   CrownOutlined,
   GoldOutlined,
+  SkinOutlined,
 } from "@ant-design/icons";
 
 export const defaultRoutes = [
@@ -19,46 +20,40 @@ export const defaultRoutes = [
     component: "Dashboard",
   },
   {
-    title: "趋势分析",
-    icon: <PercentageOutlined />,
-    link: "/trending-analysis",
-    component: "TrendingAnalysis",
+    title: "UI控件",
+    icon: <SkinOutlined />,
+    link: "/ui",
+    component: "Ui",
+    children: [
+      {
+        title: "Button",
+        link: "/ui/button",
+      },
+      {
+        title: "Icon",
+        link: "/ui/icon",
+      },
+    ],
   },
   {
-    title: "搜索词分析",
-    icon: <HourglassOutlined />,
-    link: "/search-analysis",
-    component: "SearchAnalysis",
-  },
-  {
-    title: "观点分析",
-    icon: <PullRequestOutlined />,
-    link: "/point-analysis",
-    component: "PointAnalysis",
-  },
-  {
-    title: "媒体分布",
-    icon: <PictureOutlined />,
-    link: "/media-analysis",
-    component: "MediaAnalysis",
-  },
-  {
-    title: "传播分析",
-    icon: <ControlOutlined />,
-    link: "/spread-analysis",
-    component: "SpreadAnalysis",
-  },
-  {
-    title: "受众分析",
-    icon: <CrownOutlined />,
-    link: "/audience-analysis",
-    component: "AudienceAnalysis",
-  },
-  {
-    title: "事件分析",
-    icon: <GoldOutlined />,
-    link: "/event-analysis",
-    component: "EventAnalysis",
+    title: "表单页",
+    icon: <EditOutlined />,
+    link: "/form",
+    component: "Form",
+    children: [
+      {
+        title: "基础表单",
+        link: "/form/basic-form",
+      },
+      {
+        title: "分布表单",
+        link: "/form/step-form",
+      },
+      {
+        title: "复杂表单",
+        link: "/form/advanced-form",
+      },
+    ],
   },
 ];
 
