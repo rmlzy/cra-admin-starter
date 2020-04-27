@@ -22,8 +22,8 @@
     "static/js/7.f8944610.chunk.js": "/cra-admin-starter/static/js/7.f8944610.chunk.js",
     "static/js/7.f8944610.chunk.js.map": "/cra-admin-starter/static/js/7.f8944610.chunk.js.map",
     "static/css/8.4f9089fa.chunk.css": "/cra-admin-starter/static/css/8.4f9089fa.chunk.css",
-    "static/js/8.1721f93e.chunk.js": "/cra-admin-starter/static/js/8.1721f93e.chunk.js",
-    "static/js/8.1721f93e.chunk.js.map": "/cra-admin-starter/static/js/8.1721f93e.chunk.js.map",
+    "static/js/8.76db72a9.chunk.js": "/cra-admin-starter/static/js/8.76db72a9.chunk.js",
+    "static/js/8.76db72a9.chunk.js.map": "/cra-admin-starter/static/js/8.76db72a9.chunk.js.map",
     "static/js/9.4b10e3b4.chunk.js": "/cra-admin-starter/static/js/9.4b10e3b4.chunk.js",
     "static/js/9.4b10e3b4.chunk.js.map": "/cra-admin-starter/static/js/9.4b10e3b4.chunk.js.map",
     "static/css/10.93de0c9a.chunk.css": "/cra-admin-starter/static/css/10.93de0c9a.chunk.css",
@@ -80,10 +80,10 @@
     "static/js/32.ab82140c.chunk.js": "/cra-admin-starter/static/js/32.ab82140c.chunk.js",
     "static/js/32.ab82140c.chunk.js.map": "/cra-admin-starter/static/js/32.ab82140c.chunk.js.map",
     "main.css": "/cra-admin-starter/static/css/main.497c49be.chunk.css",
-    "main.js": "/cra-admin-starter/static/js/main.d2852264.chunk.js",
-    "main.js.map": "/cra-admin-starter/static/js/main.d2852264.chunk.js.map",
-    "runtime-main.js": "/cra-admin-starter/static/js/runtime-main.bf0d7c5c.js",
-    "runtime-main.js.map": "/cra-admin-starter/static/js/runtime-main.bf0d7c5c.js.map",
+    "main.js": "/cra-admin-starter/static/js/main.9c93a1fe.chunk.js",
+    "main.js.map": "/cra-admin-starter/static/js/main.9c93a1fe.chunk.js.map",
+    "runtime-main.js": "/cra-admin-starter/static/js/runtime-main.1c4b8105.js",
+    "runtime-main.js.map": "/cra-admin-starter/static/js/runtime-main.1c4b8105.js.map",
     "static/css/35.8391f926.chunk.css": "/cra-admin-starter/static/css/35.8391f926.chunk.css",
     "static/js/35.a0e351fa.chunk.js": "/cra-admin-starter/static/js/35.a0e351fa.chunk.js",
     "static/js/35.a0e351fa.chunk.js.map": "/cra-admin-starter/static/js/35.a0e351fa.chunk.js.map",
@@ -94,7 +94,7 @@
     "static/js/37.507085b0.chunk.js": "/cra-admin-starter/static/js/37.507085b0.chunk.js",
     "static/js/37.507085b0.chunk.js.map": "/cra-admin-starter/static/js/37.507085b0.chunk.js.map",
     "index.html": "/cra-admin-starter/index.html",
-    "precache-manifest.a26795d162ed5bf0aa11f1fe48329646.js": "/cra-admin-starter/precache-manifest.a26795d162ed5bf0aa11f1fe48329646.js",
+    "precache-manifest.9c87ded05b186d1fb7893104ba0e3fe2.js": "/cra-admin-starter/precache-manifest.9c87ded05b186d1fb7893104ba0e3fe2.js",
     "service-worker.js": "/cra-admin-starter/service-worker.js",
     "static/css/0.ef8434ae.chunk.css.map": "/cra-admin-starter/static/css/0.ef8434ae.chunk.css.map",
     "static/css/1.eb54b4b4.chunk.css.map": "/cra-admin-starter/static/css/1.eb54b4b4.chunk.css.map",
@@ -123,10 +123,10 @@
     "static/media/logo.png": "/cra-admin-starter/static/media/logo.d9d9fb02.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.bf0d7c5c.js",
+    "static/js/runtime-main.1c4b8105.js",
     "static/css/35.8391f926.chunk.css",
     "static/js/35.a0e351fa.chunk.js",
     "static/css/main.497c49be.chunk.css",
-    "static/js/main.d2852264.chunk.js"
+    "static/js/main.9c93a1fe.chunk.js"
   ]
 }

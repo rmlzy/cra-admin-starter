@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b79dff44c4e9f737d5c0a96e67b8cea5",
+    "revision": "38d01fbc53514907a141f2ff55f16510",
     "url": "/cra-admin-starter/index.html"
   },
   {
@@ -64,11 +64,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cra-admin-starter/static/css/6.3c515868.chunk.css"
   },
   {
-    "revision": "3446022db6929f303156",
+    "revision": "614abc009f2f9a6fc3f1",
     "url": "/cra-admin-starter/static/css/8.4f9089fa.chunk.css"
   },
   {
-    "revision": "fb193573ade8d3f897f8",
+    "revision": "e619466fb48cbc69586a",
     "url": "/cra-admin-starter/static/css/main.497c49be.chunk.css"
   },
   {
@@ -220,20 +220,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cra-admin-starter/static/js/7.f8944610.chunk.js"
   },
   {
-    "revision": "3446022db6929f303156",
-    "url": "/cra-admin-starter/static/js/8.1721f93e.chunk.js"
+    "revision": "614abc009f2f9a6fc3f1",
+    "url": "/cra-admin-starter/static/js/8.76db72a9.chunk.js"
   },
   {
     "revision": "fd61f553a2b6f989e0ed",
     "url": "/cra-admin-starter/static/js/9.4b10e3b4.chunk.js"
   },
   {
-    "revision": "fb193573ade8d3f897f8",
-    "url": "/cra-admin-starter/static/js/main.d2852264.chunk.js"
+    "revision": "e619466fb48cbc69586a",
+    "url": "/cra-admin-starter/static/js/main.9c93a1fe.chunk.js"
   },
   {
-    "revision": "7baf2ebbd7e6b7b13582",
-    "url": "/cra-admin-starter/static/js/runtime-main.bf0d7c5c.js"
+    "revision": "f33cd23e78da945aa565",
+    "url": "/cra-admin-starter/static/js/runtime-main.1c4b8105.js"
   },
   {
     "revision": "aa414ce4c428771c34a1213a571d5cbe",
