@@ -1,5 +1,5 @@
 import React from "react";
-import { DashboardOutlined, EditOutlined, AreaChartOutlined, SkinOutlined } from "@ant-design/icons";
+import { DashboardOutlined, EditOutlined, AreaChartOutlined, SkinOutlined, FormOutlined } from "@ant-design/icons";
 
 export const defaultRoutes = [
   {
@@ -58,6 +58,18 @@ export const defaultRoutes = [
       {
         title: "饼状图",
         link: "/charts/bar-chart",
+      },
+    ],
+  },
+  {
+    title: "编辑器",
+    icon: <FormOutlined />,
+    link: "/editor",
+    component: "Editor",
+    children: [
+      {
+        title: "Quill富文本",
+        link: "/editor/quill",
       },
     ],
   },
