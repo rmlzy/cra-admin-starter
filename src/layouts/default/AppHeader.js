@@ -1,11 +1,20 @@
 import React from "react";
-import { Badge, Menu, Dropdown, Avatar } from "antd";
+import { Badge, Modal, Menu, Dropdown, Avatar } from "antd";
 import { Link } from "react-router-dom";
 import { BellOutlined, UserOutlined } from "@ant-design/icons";
 import logoPng from "../../images/logo.png";
 
 export default class AppHeader extends React.Component {
+  state = {
+    contactModalVisible: false,
+  };
+
+  setContactModalVisible = (contactModalVisible) => {
+    this.setState({ contactModalVisible });
+  };
+
   render() {
+    const { contactModalVisible } = this.state;
     const menu = (
       <Menu>
         <Menu.Item>
@@ -28,16 +37,16 @@ export default class AppHeader extends React.Component {
 
         <ul className="nav">
           <li className="nav-item">
-            <Link to="/">实时舆情</Link>
+            <Link to="/list/table">用户管理</Link>
           </li>
           <li className="nav-item">
-            <Link to="/">舆情分析</Link>
+            <Link to="/charts/line-chart">销售统计</Link>
           </li>
           <li className="nav-item">
-            <Link to="/">舆情报告</Link>
+            <Link to="/map/amap">区域分析</Link>
           </li>
           <li className="nav-item">
-            <Link to="/">设置</Link>
+            <Link to="/editor/quill">新闻发布</Link>
           </li>
         </ul>
 
@@ -48,13 +57,9 @@ export default class AppHeader extends React.Component {
             </Badge>
           </li>
           <li className="nav-icon">
-            <Link to="/">联系</Link>
-          </li>
-          <li className="nav-icon">
-            <Link to="/">帮助</Link>
-          </li>
-          <li className="nav-icon">
-            <Link to="/">购买</Link>
+            <a href="javascript:;" onClick={() => this.setContactModalVisible(true)}>
+              联系
+            </a>
           </li>
         </ul>
 
@@ -64,6 +69,34 @@ export default class AppHeader extends React.Component {
             <span style={{ marginLeft: 5 }}>管理员</span>
           </div>
         </Dropdown>
+
+        <Modal
+          title="关于CRA Admin"
+          visible={contactModalVisible}
+          okText="点赞"
+          cancelText="取消"
+          maskClosable
+          onOk={() => {
+            window.open("https://github.com/fs-coder/cra-admin-starter");
+          }}
+          onCancel={() => this.setContactModalVisible(false)}
+        >
+          <p>CRA Admin 是一个基于 CRA 的中后台系统模板</p>
+          <p>
+            特性:
+            <ul>
+              <li>基于 create-react-app 创建, 代码十分精简</li>
+              <li>集成了很多常用的功能</li>
+              <li>
+                源代码托管在
+                <a href="https://github.com/fs-coder/cra-admin-starter" target="_blank">
+                  Github
+                </a>
+              </li>
+            </ul>
+          </p>
+          <p>MIT, 你可以继续定制自己的项目</p>
+        </Modal>
       </div>
     );
   }
