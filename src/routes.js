@@ -6,6 +6,7 @@ import {
   SkinOutlined,
   FormOutlined,
   GlobalOutlined,
+  UnorderedListOutlined,
 } from "@ant-design/icons";
 
 export const defaultRoutes = [
@@ -29,6 +30,18 @@ export const defaultRoutes = [
       {
         title: "Icon",
         link: "/ui/icon",
+      },
+    ],
+  },
+  {
+    title: "列表页",
+    icon: <UnorderedListOutlined />,
+    link: "/list",
+    component: "List",
+    children: [
+      {
+        title: "查询表格",
+        link: "/list/table",
       },
     ],
   },
