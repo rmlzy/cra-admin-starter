@@ -3,9 +3,6 @@
 ## 预览
 [在线预览](https://fs-coder.github.io/cra-admin-starter)
 ![](./docs/preview1.jpg)
-![](./docs/preview4.jpg)
-![](./docs/preview2.jpg)
-![](./docs/preview3.jpg)
 
 ## 特性
 1. 基于 [create-react-app](https://github.com/facebook/create-react-app) 创建, 代码十分精简, 没有过于复杂的配置;

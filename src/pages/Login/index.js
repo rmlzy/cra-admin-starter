@@ -43,7 +43,8 @@ class Login extends React.Component {
           <Col xs={0} sm={12} md={10} lg={16} />
           <Col xs={24} sm={12} md={14} lg={8}>
             <div className="login__form">
-              <h2>登录</h2>
+              <h2 className="login__form__title">登录</h2>
+              <p className="login__form__desc">CRA Admin 是一个基于 CRA 的中后台系统</p>
               <Form
                 name="basic"
                 initialValues={{ remember: true }}
