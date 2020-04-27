@@ -58,7 +58,7 @@ export default class AppHeader extends React.Component {
           </li>
           <li className="nav-icon">
             <a href="#demo" onClick={() => this.setContactModalVisible(true)}>
-              联系
+              关于
             </a>
           </li>
         </ul>
