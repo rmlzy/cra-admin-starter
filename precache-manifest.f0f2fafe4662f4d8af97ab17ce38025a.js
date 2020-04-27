@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5491c0c32a6e863cae9d9d9215e1d7d3",
+    "revision": "8b8f888531d4f3b3d343928616e66b3a",
     "url": "/cra-admin-starter/index.html"
   },
   {
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cra-admin-starter/static/css/9.4203b467.chunk.css"
   },
   {
-    "revision": "19fe8f991f04375286bd",
-    "url": "/cra-admin-starter/static/css/main.6f047fa3.chunk.css"
+    "revision": "88b16f4ad6cc6d3b16e7",
+    "url": "/cra-admin-starter/static/css/main.e38064bb.chunk.css"
   },
   {
     "revision": "9d4c92e13e7ca4f20fac",
@@ -248,8 +248,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cra-admin-starter/static/js/9.66725af8.chunk.js"
   },
   {
-    "revision": "19fe8f991f04375286bd",
-    "url": "/cra-admin-starter/static/js/main.e879d308.chunk.js"
+    "revision": "88b16f4ad6cc6d3b16e7",
+    "url": "/cra-admin-starter/static/js/main.18534b55.chunk.js"
   },
   {
     "revision": "c3c28f2bbb4d99da79f3",
@@ -272,7 +272,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cra-admin-starter/static/media/login-bg-4.1b34a9c0.jpg"
   },
   {
-    "revision": "d9d9fb0200c13316c4424f3bd0efca2b",
-    "url": "/cra-admin-starter/static/media/logo.d9d9fb02.png"
+    "revision": "6e741b4e2335a6fad27cb1e0d6d67dd3",
+    "url": "/cra-admin-starter/static/media/logo.6e741b4e.png"
   }
 ]);
