@@ -7,6 +7,7 @@ import {
   FormOutlined,
   GlobalOutlined,
   UnorderedListOutlined,
+  FileDoneOutlined,
 } from "@ant-design/icons";
 
 export const defaultRoutes = [
@@ -62,6 +63,18 @@ export const defaultRoutes = [
       {
         title: "复杂表单",
         link: "/form/advanced-form",
+      },
+    ],
+  },
+  {
+    title: "详情页",
+    icon: <FileDoneOutlined />,
+    link: "/profile",
+    component: "Profile",
+    children: [
+      {
+        title: "基础详情",
+        link: "/profile/basic",
       },
     ],
   },
