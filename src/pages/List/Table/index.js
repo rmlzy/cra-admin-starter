@@ -88,7 +88,7 @@ export default class TablePage extends React.Component {
         title: "姓名",
         dataIndex: "name",
         key: "name",
-        render: (text) => <a>{text}</a>,
+        render: (text) => <a href="#demo">{text}</a>,
       },
       {
         title: "年龄",
@@ -125,11 +125,11 @@ export default class TablePage extends React.Component {
         key: "action",
         render: (text, record) => (
           <span>
-            <a href="#">查看</a>
+            <a href="#demo">查看</a>
             <Divider type="vertical" />
-            <a href="#">编辑</a>
+            <a href="#demo">编辑</a>
             <Divider type="vertical" />
-            <a href="#">删除</a>
+            <a href="#demo">删除</a>
           </span>
         ),
       },
@@ -166,9 +166,9 @@ export default class TablePage extends React.Component {
           title="用户列表"
           extra={
             <div>
-              <a href="javascript:;">新增</a>
+              <a href="#demo">新增</a>
               <Divider type="vertical" />
-              <a href="javascript:;" onClick={this.queryTableData}>
+              <a href="#demo" onClick={this.queryTableData}>
                 刷新数据
               </a>
             </div>

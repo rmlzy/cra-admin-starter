@@ -4,11 +4,34 @@ import { withRouter, Link } from "react-router-dom";
 import { defaultRoutes } from "../../routes";
 
 class AppBody extends React.Component {
-  state = {
-    currentBreads: [],
+  expandMenu = (menus) => {
+    const result = [];
+    menus.forEach((menu1) => {
+      if (!menu1.children) {
+        result.push([menu1]);
+        return;
+      }
+      menu1.children.forEach((menu2) => {
+        if (!menu2.children) {
+          result.push([menu1, menu2]);
+          return;
+        }
+        menu2.children.forEach((menu3) => {
+          if (!menu3.children) {
+            result.push([menu1, menu2, menu3]);
+            return;
+          }
+          menu3.children.forEach((menu4) => {
+            result.push([menu1, menu2, menu3, menu4]);
+          });
+        });
+      });
+    });
+    return result;
   };
 
-  componentDidMount() {
+  render() {
+    const { children } = this.props;
     const { pathname } = this.props.location;
     const expandedMenus = this.expandMenu(defaultRoutes);
     let currentBreads = [];
@@ -20,38 +43,6 @@ class AppBody extends React.Component {
         }
       }
     });
-    this.setState({ currentBreads });
-  }
-
-  expandMenu = (menus) => {
-    const result = [];
-    menus.forEach((menu1) => {
-      if (menu1.children) {
-        menu1.children.forEach((menu2) => {
-          if (menu2.children) {
-            menu2.children.forEach((menu3) => {
-              if (menu3.children) {
-                menu3.children.forEach((menu4) => {
-                  result.push([menu1, menu2, menu3, menu4]);
-                });
-              } else {
-                result.push([menu1, menu2, menu3]);
-              }
-            });
-          } else {
-            result.push([menu1, menu2]);
-          }
-        });
-      } else {
-        result.push([menu1]);
-      }
-    });
-    return result;
-  };
-
-  render() {
-    const { children } = this.props;
-    const { currentBreads } = this.state;
     return (
       <div className="app-body">
         <div className="breadcrumb">

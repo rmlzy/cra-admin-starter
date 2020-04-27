@@ -1,15 +1,14 @@
 import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
-import Loadable from "react-loadable";
+import loadable from "@loadable/component";
 import { DefaultLayout, BlankLayout } from "./layouts";
 import Loading from "./components/Loading";
 import { defaultRoutes, blankRoutes } from "./routes";
 import "./global.less";
 
 const lazy = (Name) =>
-  Loadable({
-    loader: () => import(`./pages/${Name}`),
-    loading: Loading,
+  loadable(() => import(`./pages/${Name}`), {
+    fallback: Loading,
   });
 
 const RouteWithLayout = ({ layout, component, ...rest }) => (

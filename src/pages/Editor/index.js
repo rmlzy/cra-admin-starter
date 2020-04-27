@@ -1,12 +1,11 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import Loadable from "react-loadable";
-import Loading from "../../components/Loading";
+import loadable from "@loadable/component";
+import { Loading } from "../../components";
 
 const lazy = (Name) =>
-  Loadable({
-    loader: () => import(`./${Name}`),
-    loading: Loading,
+  loadable(() => import(`./${Name}`), {
+    fallback: Loading,
   });
 
 export default ({ match }) => (

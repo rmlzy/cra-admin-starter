@@ -57,7 +57,7 @@ export default class AppHeader extends React.Component {
             </Badge>
           </li>
           <li className="nav-icon">
-            <a href="javascript:;" onClick={() => this.setContactModalVisible(true)}>
+            <a href="#demo" onClick={() => this.setContactModalVisible(true)}>
               联系
             </a>
           </li>
@@ -89,8 +89,8 @@ export default class AppHeader extends React.Component {
               <li>集成了很多常用的功能</li>
               <li>
                 源代码托管在
-                <a href="https://github.com/fs-coder/cra-admin-starter" target="_blank">
-                  Github
+                <a href="https://github.com/fs-coder/cra-admin-starter" target="_blank" rel="noopener noreferrer">
+                  Githubw
                 </a>
               </li>
             </ul>
