@@ -31,22 +31,22 @@ export default class AppHeader extends React.Component {
     return (
       <div className="app-header">
         <Link className="brand" to="/">
-          <img src={logoPng} alt="CRA 管理系统" />
-          <span>CRA Admin</span>
+          <img src={logoPng} alt="舆情系统" />
+          <span>舆情系统</span>
         </Link>
 
         <ul className="nav">
           <li className="nav-item">
-            <Link to="/list/table">用户管理</Link>
+            <Link to="/charts/line-chart">实时舆情</Link>
           </li>
           <li className="nav-item">
-            <Link to="/charts/line-chart">销售统计</Link>
+            <Link to="/map/amap">舆情分析</Link>
           </li>
           <li className="nav-item">
-            <Link to="/map/amap">区域分析</Link>
+            <Link to="/editor/quill">舆情报告</Link>
           </li>
           <li className="nav-item">
-            <Link to="/editor/quill">新闻发布</Link>
+            <Link to="/list/table">设置</Link>
           </li>
         </ul>
 
