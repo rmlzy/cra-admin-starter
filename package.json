@@ -1,7 +1,7 @@
 {
   "name": "cra-admin-starter",
   "version": "1.0.0",
-  "homepage": "https://fs-coder.github.io/cra-admin-starter",
+  "homepage": "https://rmlzy.github.io/cra-admin-starter",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
@@ -40,7 +40,7 @@
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "prettier": "^2.0.5",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^4.0.3"
   },
   "browserslist": {
     "production": [
