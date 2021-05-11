@@ -18,7 +18,7 @@
     "dayjs": "^1.8.25",
     "echarts": "^4.7.0",
     "echarts-for-react": "^2.0.15-beta.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "react": "^16.13.1",
     "react-amap": "^1.2.8",
     "react-app-rewired": "^2.1.5",
